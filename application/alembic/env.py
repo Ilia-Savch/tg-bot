@@ -9,6 +9,11 @@ from alembic import context
 
 from core.models.base import Base
 from core.config import settings
+from core.models.user import User
+from core.models.access_token import AccessToken
+from core.models.post import TgPost
+
+
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
