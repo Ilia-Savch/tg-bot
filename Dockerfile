@@ -3,7 +3,7 @@ FROM python:3.12.3
 WORKDIR /app
 
 ENV PYTHONUNBUFFERED=1
-ENV PYTHONPATH=/app/application
+# ENV PYTHONPATH=/app/application
 
 RUN pip install --upgrade pip wheel
 

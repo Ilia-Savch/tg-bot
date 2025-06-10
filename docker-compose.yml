@@ -10,6 +10,9 @@ services:
       - postgres
     volumes:
       - ./:/app
+    working_dir: /app/application
+    environment:
+      - PYTHONPATH=/app
 
 
   postgres:
@@ -20,7 +23,20 @@ services:
       - .env.db
     volumes:
       - pgdata:/var/lib/postgresql/data
-
+  
+  bot:
+    build: .
+    container_name: bot
+    env_file:
+      - .env.bot
+    depends_on:
+      - postgres
+    volumes:
+      - ./:/app
+    working_dir: /app/bot
+    environment:
+      - PYTHONPATH=/app
+    command: python -u main.py
 
 
 volumes:
