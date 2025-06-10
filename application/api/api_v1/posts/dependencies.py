@@ -2,8 +2,8 @@ from typing import Annotated
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from . import crud
-from core.models.db_helper import db_helper
-from core.models.post import TgPost
+from application.core.models.db_helper import db_helper
+from application.core.models.post import TgPost
 
 from fastapi import Depends, HTTPException, Path, status
 

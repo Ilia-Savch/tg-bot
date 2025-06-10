@@ -1,8 +1,8 @@
 from typing import TYPE_CHECKING, Annotated
 
 from fastapi import Depends
-from core.models.access_token import AccessToken
-from core.models.db_helper import db_helper
+from application.core.models.access_token import AccessToken
+from application.core.models.db_helper import db_helper
 
 from fastapi_users_db_sqlalchemy.access_token import SQLAlchemyAccessTokenDatabase
 

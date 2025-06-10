@@ -1,9 +1,9 @@
 from fastapi import APIRouter
 
-from core.schemas.users import UserRead, UserCreate
+from application.core.schemas.users import UserRead, UserCreate
 from .dependencies import fastapi_users
 
-from core.config import settings
+from application.core.config import settings
 
 router = APIRouter(
     prefix=settings.api.v1.users,

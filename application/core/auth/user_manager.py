@@ -4,8 +4,8 @@ from typing import Optional, TYPE_CHECKING
 
 from fastapi_users import BaseUserManager, IntegerIDMixin
 
-from core.models.user import User
-from core.types.user_id import UserIdType
+from application.core.models.user import User
+from application.core.types.user_id import UserIdType
 
 
 from core.config import settings

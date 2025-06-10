@@ -7,11 +7,11 @@ from sqlalchemy.ext.asyncio import async_engine_from_config
 
 from alembic import context
 
-from core.models.base import Base
-from core.config import settings
-from core.models.user import User
-from core.models.access_token import AccessToken
-from core.models.post import TgPost
+from application.core.models.base import Base
+from application.core.config import settings
+from application.core.models.user import User
+from application.core.models.access_token import AccessToken
+from application.core.models.post import TgPost
 
 
 

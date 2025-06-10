@@ -1,4 +1,4 @@
-from core.types.user_id import UserIdType
+from application.core.types.user_id import UserIdType
 from .base import Base
 from fastapi_users_db_sqlalchemy.access_token import SQLAlchemyBaseAccessTokenTable
 from sqlalchemy.orm import Mapped, mapped_column

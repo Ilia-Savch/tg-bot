@@ -1,6 +1,6 @@
 from sqlalchemy.ext.asyncio import AsyncSession
-from core.models.post import TgPost
-from core.schemas.posts import PostCreate, PostUpdatePartial
+from application.core.models.post import TgPost
+from application.core.schemas.posts import PostCreate, PostUpdatePartial
 from datetime import datetime, timezone
 
 async def get_post(session: AsyncSession, post_id: int) -> TgPost | None:
